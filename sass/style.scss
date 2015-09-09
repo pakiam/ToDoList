@@ -1,0 +1,39 @@
+@import "compass/reset";
+
+body {
+  position: relative;
+  margin: 0 auto;
+  width: 855px;
+}
+
+.tabs {
+  a {
+    span {
+      display: inline-block;
+      -webkit-border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+      border-radius: 5px 5px 0 0;
+      width: 100px;
+      margin-right: 10px;
+      text-align: center;
+      background: #dddddd;
+      padding: 5px;
+      &.active{
+        background: #eeeeee;
+      }
+    }
+  }
+}
+.content{
+  ul{
+    li{
+
+      &:nth-child(even){
+        background: lavender;
+      }
+      &:nth-child(odd){
+        background: gainsboro;
+      }
+    }
+  }
+}
